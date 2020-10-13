@@ -1,16 +1,18 @@
 //array with names
-var ArrayNumbers : Array<string>=["Steve","Alfred","James","Zuse","Hermes","Platos","Madusa","Nike","Athena","John"];
+var ArrayNames : Array<string>=["Steve","Alfred","James","Zuse","Hermes","Platos","Madusa","Nike","Athena","John"];
 
-
-for (let obj in ArrayNumbers){
+//for in preferst to print out the type or index 
+for (let prop in ArrayNames){
     //print out the index
-    // console.log(index);
-    //print out values
-    console.log(obj[0]);
-}//adfadsf
+    console.log(prop);
+    //print out type (string in our case)
+    console.log(typeof(prop));
+    //print out values. We need to call apon the arrayNames properties
+    console.log(`Names: ${ArrayNames[prop]}`);
+}
 
-//print out the value
-for (let i of ArrayNumbers){
-    // console.log(i);
+//print out the value. For of lets you print out the values directly
+for (let i of ArrayNames){
+    console.log(i);
 }
 
