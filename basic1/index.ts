@@ -14,7 +14,7 @@ var res="";
 // table();
 for(let i of ArrayNumbers){
     for(let j of ArrayNumbers){
-         document.getElementsByClassName('result')[0].innerHTML+=`${i} * ${j}=${i*j} <br>`;
+         document.getElementsByClassName('result')[0].innerHTML+=`${i} * ${j}=${i * j} <br>`;
      }
     document.getElementsByClassName('result')[0].innerHTML+=`<hr>`;
 }
